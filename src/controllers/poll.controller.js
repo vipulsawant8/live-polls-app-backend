@@ -23,9 +23,7 @@ const createPoll = asyncHandler( async (req, res) => {
 	return res.status(201).json(response);
 } );
 
-const fetchPolls = asyncHandler( async (req, res) => {z
-
-	const userID = req.user._id;
+const fetchPolls = asyncHandler( async (req, res) => {
 
 	const polls = await Poll.find().sort({ createdAt: -1 }).lean();
 	const response = { success: true, data: polls, message: "Polls fetched successfully" };
