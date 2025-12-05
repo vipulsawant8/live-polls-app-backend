@@ -1,4 +1,4 @@
-import './loadEnv.js';
+// import './loadEnv.js';
 
 import http from "http";
 import { Server } from 'socket.io';
