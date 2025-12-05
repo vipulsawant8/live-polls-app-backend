@@ -14,8 +14,8 @@ const initiateServer = async () => {
 
 		const server = http.createServer(app);
 		
-		console.log("Server Initiated");
-		console.log("process.env.NODE_ENV :", process.env.NODE_ENV);
+		// console.log("Server Initiated");
+		// console.log("process.env.NODE_ENV :", process.env.NODE_ENV);
 		await connectDB();
 
 		const io = new Server(server, {

@@ -1,7 +1,7 @@
 const setCookieOptions = name => {
 
 	const isProd = process.env.NODE_ENV === "production";
-	
+	console.log("isProd :", isProd);
 	const base = {
 		secure: isProd ? true : false,
 		httpOnly: isProd ? true : false,
